@@ -12,9 +12,16 @@ namespace WindowsFormsApp1
 {
     public partial class summaryForm : Form
     {
-        public summaryForm()
+        Elevator elevator;
+        public summaryForm(Elevator el)
         {
             InitializeComponent();
+            elevator = el;
+        }
+
+        private void summaryForm_Load(object sender, EventArgs e)
+        {
+            label3.Text = elevator.totalWeigh.ToString();
         }
     }
 }

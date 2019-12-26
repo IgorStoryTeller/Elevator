@@ -41,7 +41,7 @@
             // nofRidesLabel
             // 
             this.nofRidesLabel.AutoSize = true;
-            this.nofRidesLabel.Location = new System.Drawing.Point(66, 30);
+            this.nofRidesLabel.Location = new System.Drawing.Point(73, 37);
             this.nofRidesLabel.Name = "nofRidesLabel";
             this.nofRidesLabel.Size = new System.Drawing.Size(79, 13);
             this.nofRidesLabel.TabIndex = 0;
@@ -50,7 +50,7 @@
             // nofBlankRidesLabel
             // 
             this.nofBlankRidesLabel.AutoSize = true;
-            this.nofBlankRidesLabel.Location = new System.Drawing.Point(37, 60);
+            this.nofBlankRidesLabel.Location = new System.Drawing.Point(44, 67);
             this.nofBlankRidesLabel.Name = "nofBlankRidesLabel";
             this.nofBlankRidesLabel.Size = new System.Drawing.Size(108, 13);
             this.nofBlankRidesLabel.TabIndex = 1;
@@ -59,7 +59,7 @@
             // totalWeighLabel
             // 
             this.totalWeighLabel.AutoSize = true;
-            this.totalWeighLabel.Location = new System.Drawing.Point(87, 90);
+            this.totalWeighLabel.Location = new System.Drawing.Point(94, 97);
             this.totalWeighLabel.Name = "totalWeighLabel";
             this.totalWeighLabel.Size = new System.Drawing.Size(58, 13);
             this.totalWeighLabel.TabIndex = 2;
@@ -68,7 +68,7 @@
             // nofAddedPeopleLabel
             // 
             this.nofAddedPeopleLabel.AutoSize = true;
-            this.nofAddedPeopleLabel.Location = new System.Drawing.Point(23, 120);
+            this.nofAddedPeopleLabel.Location = new System.Drawing.Point(30, 127);
             this.nofAddedPeopleLabel.Name = "nofAddedPeopleLabel";
             this.nofAddedPeopleLabel.Size = new System.Drawing.Size(122, 13);
             this.nofAddedPeopleLabel.TabIndex = 3;
@@ -77,7 +77,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(152, 30);
+            this.label1.Location = new System.Drawing.Point(159, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 4;
@@ -85,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(152, 60);
+            this.label2.Location = new System.Drawing.Point(159, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 5;
@@ -93,7 +93,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(152, 90);
+            this.label3.Location = new System.Drawing.Point(159, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 6;
@@ -101,7 +101,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 120);
+            this.label4.Location = new System.Drawing.Point(159, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 7;
@@ -121,6 +121,7 @@
             this.Controls.Add(this.nofRidesLabel);
             this.Name = "summaryForm";
             this.Text = "summaryForm";
+            this.Load += new System.EventHandler(this.summaryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

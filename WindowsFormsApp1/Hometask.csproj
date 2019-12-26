@@ -52,6 +52,8 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building.cs" />
+    <Compile Include="Elevator.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

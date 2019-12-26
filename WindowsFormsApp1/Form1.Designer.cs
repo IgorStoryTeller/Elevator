@@ -1,4 +1,7 @@
-﻿namespace WindowsFormsApp1
+﻿using System;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
 {
     partial class Form1
     {
@@ -49,6 +52,7 @@
             this.nofPeopleTextBox = new System.Windows.Forms.TextBox();
             this.nofFloorsTextBox = new System.Windows.Forms.TextBox();
             this.usrsInfGBox = new System.Windows.Forms.GroupBox();
+            this.curFloorLabel = new System.Windows.Forms.Label();
             this.newUserGBox.SuspendLayout();
             this.statusBar.SuspendLayout();
             this.InitialDataGBox.SuspendLayout();
@@ -130,7 +134,6 @@
             this.nameTextLabel.Size = new System.Drawing.Size(33, 13);
             this.nameTextLabel.TabIndex = 2;
             this.nameTextLabel.Text = "name";
-            this.nameTextLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // nameTextBox
             // 
@@ -138,7 +141,6 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 1;
-            this.nameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // addUsrBtn
             // 
@@ -148,6 +150,7 @@
             this.addUsrBtn.TabIndex = 1;
             this.addUsrBtn.Text = "add";
             this.addUsrBtn.UseVisualStyleBackColor = true;
+            this.addUsrBtn.Click += new System.EventHandler(this.addUsrBtn_Click);
             // 
             // statusBar
             // 
@@ -208,7 +211,6 @@
             this.InitialDataGBox.TabIndex = 6;
             this.InitialDataGBox.TabStop = false;
             this.InitialDataGBox.Text = "initial data";
-            this.InitialDataGBox.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // nofPeopleTextLabel
             // 
@@ -250,6 +252,15 @@
             this.usrsInfGBox.TabIndex = 7;
             this.usrsInfGBox.TabStop = false;
             this.usrsInfGBox.Text = "users\' information";
+            this.usrsInfGBox.Enter += new System.EventHandler(this.usrsInfGBox_Enter);
+            // 
+            // curFloorLabel
+            // 
+            this.curFloorLabel.AutoSize = true;
+            this.curFloorLabel.Location = new System.Drawing.Point(26, 410);
+            this.curFloorLabel.Name = "curFloorLabel";
+            this.curFloorLabel.Size = new System.Drawing.Size(0, 13);
+            this.curFloorLabel.TabIndex = 8;
             // 
             // Form1
             // 
@@ -257,6 +268,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 468);
+            this.Controls.Add(this.curFloorLabel);
             this.Controls.Add(this.usrsInfGBox);
             this.Controls.Add(this.InitialDataGBox);
             this.Controls.Add(this.stopBtn);
@@ -264,6 +276,7 @@
             this.Controls.Add(this.newUserGBox);
             this.Name = "Form1";
             this.Text = "Elevator";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.newUserGBox.ResumeLayout(false);
             this.newUserGBox.PerformLayout();
@@ -275,6 +288,8 @@
             this.PerformLayout();
 
         }
+
+
 
         #endregion
 
@@ -299,6 +314,7 @@
         private System.Windows.Forms.TextBox nofPeopleTextBox;
         private System.Windows.Forms.TextBox nofFloorsTextBox;
         private System.Windows.Forms.GroupBox usrsInfGBox;
+        private System.Windows.Forms.Label curFloorLabel;
     }
 }
 
